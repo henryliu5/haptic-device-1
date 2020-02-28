@@ -16,6 +16,7 @@ private:
     cShapeLine *velVector;
     double sphere_mass;
     cColorf base_color;
+    int lammpsID;
     
 public:
     Atom(double radius, double sphere_mass, cColorf color = cColorf());
@@ -35,6 +36,7 @@ public:
     void setInitialPosition(double spawn_dist = .1);
     double getMass();
     void setColor(cColorf color);
+    void setID(int id);
 };
 
 #endif  // ATOM_H

@@ -112,3 +112,6 @@ void Atom::setInitialPosition(double spawn_dist) {
 double Atom::getMass() { return sphere_mass; }
 
 void Atom::setColor(cColorf color) { m_material->setColor(color); }
+
+void Atom::setID(int id) { lammpsID = id; }
+
